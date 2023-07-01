@@ -1,0 +1,708 @@
+/* ==== Start Global Rules ==== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* ==== End Global Rules ==== */ 
+
+
+
+
+
+
+/* ==== Start Variables ==== */
+:root {
+  --main-color:#10CAB7;
+  --secondary-color:#2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --paragraph-color: #777;
+  --main-transition: 0.5s ease;
+}
+/* ==== End Variables ==== */
+
+
+
+
+
+
+/* ==== Start Global Style ==== */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+h2.main-title{
+  width: fit-content;
+  background-image: url(../image/dots.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  letter-spacing: -2px;
+}
+/* ==== End Global Style ==== */
+
+
+
+
+
+
+/* ==== Standard Media ==== */
+@media all and (max-width: 575px)  {}
+@media all and (min-width: 576px) and (max-width: 767px){}
+@media all and (min-width: 768px) and (max-width: 991px){}
+@media all and (min-width: 992px) and (max-width: 1199px){}
+@media all and (min-width: 1200px) {}
+
+
+
+
+
+
+/* ===== Start Navbar section ===== */
+nav {
+  /* backdrop-filter: blur(10px); */
+  background-color: white;
+  box-shadow: 0px 0px 10px #cfcfcf;;
+}
+.navbar-brand  {
+  font-size: 25px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.navbar-brand:hover  {
+  color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link,.navbar-brand{
+  color: black;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  font-size: 12px !important;
+  color: black !important;
+  margin: 0px 10px ;
+}
+.navbar-nav .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.navbar-nav .nav-link.active:before {
+  width: 100%;
+}
+/* ===== End Navbar section ===== */
+
+
+
+
+
+
+/* ==== Start Home Section ==== */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.603) , rgba(0, 0, 0, 0.61)), url(../image/bg.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.home h1 {
+    font-size: 70px !important;
+}
+.home .move-title:after{
+  content: " | ";
+  animation-name: move-title;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  font-weight: 600;
+  font-size: 80px !important;
+  letter-spacing: 4px !important;
+}
+
+
+
+@keyframes move-title {
+  0%   {  content: " L| ";}
+  1%   {  content: " La| ";}
+  2%   {  content: " Lar| ";}
+  3%   {  content: " Larr| ";}
+  4%   {  content: " Larry| ";}
+  5%   {  content: " Larry | ";}
+  7%   {  content: " Larry D| ";}
+  8%   {  content: " Larry Da| ";}
+  9%   {  content: " Larry Dan| ";}
+  10%  {  content: " Larry Dani| ";}
+  11%  {  content: " Larry Danie| ";}
+  12%  {  content: " Larry Daniel| ";}
+  13%  {  content: " Larry Daniels| ";}
+  14%  {  content: " Larry Daniels| ";}
+  15%  {  content: " Larry Daniels| ";}
+  17%  {  content: " Larry Daniels| ";}
+  18%  {  content: " Larry Daniels| ";}
+  19%  {  content: " Larry Daniels| ";}
+  20%  {  content: " Larry Daniels| ";}
+  21%  {  content: " Larry Daniels| ";}
+  22%  {  content: " Larry Daniels| ";}
+  23%  {  content: " Larry Daniels| ";}
+  24%  {  content: " Larry Daniels| ";}
+  25%  {  content: " Larry Daniel| ";}
+  27%  {  content: " Larry Danie| ";}
+  28%  {  content: " Larry Dani| ";}
+  29%  {  content: " Larry Dan| ";}
+  30%  {  content: " Larry Da| ";}
+  31%  {  content: " Larry D| ";}
+  32%  {  content: " Larry | ";}
+  33%  {  content: " Larry| ";}
+  34%  {  content: " Larr| ";}
+  35%  {  content: " Lar| ";}
+  37%  {  content: " La| ";}
+  38%  {  content: " L| ";}
+  39%  {  content: " | ";}
+  40%  {  content: " D| ";}
+  41%  {  content: " De| ";}
+  42%  {  content: " Dev| ";}
+  43%  {  content: " Deve| ";}
+  44%  {  content: " Devel| ";}
+  45%  {  content: " Develo| ";}
+  47%  {  content: " Develop| ";}
+  48%  {  content: " Develope| ";}
+  49%  {  content: " Developer| ";}
+  50%  {  content: " Developer| ";}
+  51%  {  content: " Developer| ";}
+  52%  {  content: " Developer| ";}
+  53%  {  content: " Developer| ";}
+  54%  {  content: " Developer| ";}
+  55%  {  content: " Developer| ";}
+  57%  {  content: " Developer| ";}
+  58%  {  content: " Developer| ";}
+  59%  {  content: " Developer| ";}
+  60%  {  content: " Develope| ";} 
+  61%  {  content: " Develop| ";}
+  62%  {  content: " Develo| ";}
+  63%  {  content: " Devel| ";}
+  64%  {  content: " Deve| ";}
+  65%  {  content: " Dev| ";}
+  67%  {  content: " De| ";}
+  68%  {  content: " D| ";}
+  69%  {  content: " | ";}
+  70%  {  content: " D| ";}
+  71%  {  content: " De| ";}
+  72%  {  content: " Des| ";}
+  73%  {  content: " Desi| ";}
+  74%  {  content: " Desig| ";}
+  75%  {  content: " Design| ";}
+  77%  {  content: " Designe| ";}
+  78%  {  content: " Designer| ";}
+  79%  {  content: " Designer| ";}
+  80%  {  content: " Designer| ";}
+  81%  {  content: " Designer| ";}
+  82%  {  content: " Designer| ";}
+  83%  {  content: " Designer| ";}
+  84%  {  content: " Designer| ";}
+  85%  {  content: " Designer| ";}
+  87%  {  content: " Designer| ";}
+  88%  {  content: " Designer| ";}
+  89%  {  content: " Designer| ";}
+  90%  {  content: " Designe| ";}
+  91%  {  content: " Design| ";}
+  92%  {  content: " Desig| ";}
+  93%  {  content: " Desi| ";}
+  94%  {  content: " Des| ";}
+  95%  {  content: " De| ";}
+  97%  {  content: " D| ";}
+  98%  {  content: " | ";}
+  99%  {  content: " | ";}
+  100% {  content: " | ";}
+
+}
+.home .social-icon{
+  width: 300px;
+}
+.home .social-icon a {
+  width: 30px;
+  height: 30px;
+}
+.home .social-icon a i{
+  font-size: 14px;
+}
+
+
+@media all and (max-width: 767px){
+  .home .move-title:after{
+    font-weight: 400;
+    font-size: 40px !important;
+    letter-spacing: 2px !important;
+  }
+  .home h1 {
+    font-size: 30px !important;
+  }
+}
+/* ==== End Home Section ==== */
+
+
+
+
+
+
+/* ==== Start About Section ==== */
+.about-card .about-title span {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.about-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.progress {
+  width: 100%;
+  height: 25px;
+  margin: 30px 0px;
+  box-shadow: inset 0px 0px 2px -1px #000000
+}
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+  line-height: 2;
+}
+.progress-bar p{
+  font-size: 12px;
+}
+.btn-outline-primary {
+  color: #000000;
+  border-color: #000000;
+  width: 160px;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-align: center;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-outline-primary.active {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-outline-primary.active a {
+  color: #fff;
+}
+.btn-outline-primary.active:hover {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000;
+}
+.btn-outline-primary.active:hover a{
+  color: #000000;
+}
+
+
+
+@media all and (max-width: 767px){
+  .btn-about {
+    text-align: center;
+  }
+}
+/* ==== End About Section ==== */
+
+
+
+
+
+
+/* ==== Start services Section ==== */
+.services .item  {
+  padding: 30px;
+}
+.services .item .icon {
+  width: 50px;
+  height: 50px;
+  padding: 40px;
+  background-color: rgb(247, 247, 247);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.services .item .icon i{
+  font-size: 25px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.services .item:hover .icon {
+  background-color: black;
+}
+.services .item:hover .icon i{
+  color: white;
+}
+/* ==== End services Section  ====  */
+
+
+
+
+
+
+/* ==== Start portfolio Section ==== */
+.portfolio .portfolio-item,
+.portfolio .portfolio-item .layer h6,
+.portfolio .portfolio-item .layer {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.portfolio .portfolio-item .layer h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.portfolio .portfolio-item .layer{
+  width: 100% ;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0 !important;
+}
+.portfolio .portfolio-item:hover .layer{
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 1 !important;
+}
+.portfolio .portfolio-item:hover .layer h6{
+  margin-bottom: 10px !important;
+}
+.portfolio .portfolio-item .layer a {
+  width: 30px;
+  height: 30px;
+  color: black;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.portfolio .portfolio-item .layer a i{
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.portfolio .portfolio-item .layer a:hover i{
+  color: rgb(255, 255, 255);
+}
+.portfolio .portfolio-item .layer a:hover{
+  background-color: black;
+}
+.nav-pills .nav-link.active {
+  color: black;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+.nav-pills .nav-link {
+  color: black !important;
+  font-weight: bold;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0px 15px !important;
+}
+.nav-pills .nav-link::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.nav-pills .nav-link.active::before {
+  width: 100%;
+}
+/* ==== End portfolio Section ==== */
+
+
+
+
+
+
+/* ==== Start testimonials Section ==== */
+.testimonials .job {
+  font-size: 14px;
+}
+.testimonials .image {
+  width: 100px;
+  height: 100px;
+}
+.testimonials .text-p {
+  width: 70%;
+  margin-bottom: 40px !important;
+}
+.carousel-indicators{
+  bottom: -20px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin: 0px 6px;
+  background-color:  #bfbcbc;;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #3b4950;
+}
+
+@media all and (max-width: 767px){
+  .testimonials .text-p {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+/* ==== End testimonials Section ==== */
+
+
+
+
+
+
+/* ==== Start counter Section   ==== */
+.counter i {
+  font-size: 35px !important;
+}
+.counter .text-span {
+  font-size: 18px ;
+}
+/* ==== End counter Section   ==== */
+
+
+
+
+
+
+/* ==== Start team Section   ====  */
+.team .team-item .image-item img {
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.team .team-item .image-item:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.team .team-item:hover .layer{
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  opacity: 1 !important;
+  transform: rotateY(0deg) scale(1);
+  -webkit-transform: rotateY(0deg) scale(1);
+  -moz-transform: rotateY(0deg) scale(1);
+  -ms-transform: rotateY(0deg) scale(1);
+  -o-transform: rotateY(0deg) scale(1);
+}
+.team .layer {
+  top: 25%;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+  width: 60%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.952);
+  transform: rotateY(180deg) scale(0.5);
+  transition: var(--main-transition);
+  opacity: 0 !important;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  -webkit-transform: rotateY(180deg) scale(0.5);
+  -moz-transform: rotateY(180deg) scale(0.5);
+  -ms-transform: rotateY(180deg) scale(0.5);
+  -o-transform: rotateY(180deg) scale(0.5);
+}
+.team .layer a.social{
+  width: 40px ;
+  height: 40px;
+  color: white;
+  margin:  0px 5px;
+}
+.team .layer a.social:hover{
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  background-color: white !important;
+}
+.team .layer a i{
+  font-size: 20px;
+}
+.team .info {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #5b5b5b;
+}
+/* ==== End team Section     ====  */
+
+
+
+
+
+
+/* ==== Start contact Section    ====  */
+.contact .icon-contact{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px !important;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+} 
+.contact .icon-contact:hover{
+  background-color: black !important;
+} 
+.contact .icon-contact i{
+  font-size: 25px ;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+} 
+.contact .icon-contact:hover i{
+  color: white !important;
+} 
+.contact p{
+  font-size: 16px ;
+} 
+.contact form input {
+  width: 49%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} 
+.contact form textarea{
+  width: 100%;
+  padding: 14px;
+  height: 180px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} 
+.contact form button {
+  margin-top: 10px;
+  padding: 12px 45px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: var(--main-transition);
+  background-color: black !important;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 14px;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.contact form button:hover {
+  background-color: transparent !important;
+  border: 1px solid black;
+  color: black;
+}
+
+
+@media all and (max-width: 992px){
+  .contact form input{
+    width: 100% ;
+  } 
+}
+/* ==== End contact Section    ====  */
+
+
+
+
+
+
+/* ====   Start footer Section  ====  */
+footer {
+  margin-bottom: 2px;
+}
+footer p{
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0px;
+}
+/* ====   End footer Section    ====  */
